@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* ESTILOS PADRÃO */
+
+header {
+	display: flex;
+	justify-content: center;
+	height: 120px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 990px;
+}
+
+/* LOGO E MENU */
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+nav ul,
+nav li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li.active a{
+	background-color: #2a9da4;
+	color: #fff;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav a {
+	display: block;
+	text-transform: uppercase;
+	margin: 1px;
+	padding: 15px;	
+	border-radius: 10px;
+	text-decoration: none;
+	color: #888888;
+}
+
+nav a:hover {
+	background-color: #2a9da4;
+	color: #fff;
+	transition: all linear 300ms;
+}
+
+/* BANNER */
+#banner {
+	background-image: url('../images/image.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 670px;
+}
