@@ -19,6 +19,9 @@ header {
 	width: 990px;
 }
 
+.column {
+	flex-direction: column;
+}
 /* LOGO E MENU */
 
 .logo {
@@ -51,8 +54,7 @@ nav a {
 	display: block;
 	text-transform: uppercase;
 	margin: 1px;
-	padding: 15px;	
-	border-radius: 10px;
+	padding: 15px;
 	text-decoration: none;
 	color: #888888;
 }
@@ -64,9 +66,126 @@ nav a:hover {
 }
 
 /* BANNER */
+
+/* IMAGE */
 #banner {
+	display: flex;
+	justify-content: center;
 	background-image: url('../images/image.jpg');
 	background-position: center;
 	background-size: cover;
 	height: 670px;
+	color: #fff;
 }
+
+/* TEXT */
+.text {
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 550px;
+}
+
+h1.title {
+	padding: 0;
+	margin: 0;
+	font-size: 72px;
+}
+
+h2.subtitle {
+	font-size: 24px;
+}
+
+/* INFOS*/
+.bloco {
+	display: flex;
+	height: 210px;
+}
+
+.bloco h1 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+button.btn-banner {
+	margin-top: 20px;
+	background-color: transparent;
+	padding: 8px;
+	border: solid 1px #fff;	
+	transition: all linear 300ms;
+}
+
+a button {
+	color: #fff;
+}
+
+button.btn-banner:hover {
+	background-color: #fff;	
+	color: #2a9da4;
+}
+
+.blc1, .blc2, .blc3 {
+	flex: 1;
+	padding: 20px;
+}
+
+.blc1, .blc2, .blc3, h1 {
+	margin: 0;
+}
+
+.blc1 {
+	background-color: #42B3E5;
+}
+
+.blc2 {
+	background-color: #2a9da4;
+}
+
+.blc3 {
+	background-color: #3156A3;
+}
+
+p.p-text {
+	font-size: 13px;
+}
+
+.schedules {
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	margin-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: solid 1px #41639E;
+}
+
+.shedules.day {
+	flex: 1;
+}
+
+.shedules.hour {
+	flex: 1;
+}
+
+/* GERAL */
+#general {
+	display: flex;
+	justify-content: center;
+}
+
+h3.general-title {
+	color: #383838;
+	border-bottom: solid 1px #2a9da4;
+	width: 180px;
+	display: flex;
+}
+
+main {
+	flex:2;
+}
+
+aside {
+	flex: 1;
+}
+
