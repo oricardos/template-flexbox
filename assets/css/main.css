@@ -476,4 +476,65 @@ span {
 	color: #888;
 }
 
+@media only screen and (max-width: 600px) {
+	#banner {
+		background: #888;
+		text-align: center;
+		height: 1000px;
+	}
+	.text {
+		width: 100%;
+		padding: 20px;
+	}
 
+	h1.title {
+		font-size: 55px;
+	}
+
+	h2.subtitle {
+		font-size: 17px;
+	}
+
+	.bloco {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	#general {
+		padding: 20px;
+	}
+
+	article {
+		border-bottom: solid 1px #888;
+		margin-top: 20px;
+	}
+
+	.bloco_footer {
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer_area {
+		flex-direction: column;
+	}
+
+	.area {
+		padding: 20px;
+		border-bottom: solid 1px #888;
+	}
+
+	.social_footer {
+		justify-content: center;
+	}
+
+	.footer_bottom {
+		text-align: center;
+		border-top: none;
+		padding-bottom: 30px;
+	}
+}
